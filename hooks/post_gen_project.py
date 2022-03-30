@@ -22,20 +22,14 @@ _____________________________________________________________________________
     :::::::  '''''''''''   ''''''''''''':::. -'\  \       C. SWANSIGER
 _____':::::_____________________________________\__\_________________________
 
-If you have not done so already, create a conda environment for your new 
-project with:
+If you have not done so already, create a Pipenv environment for your new 
+project and install the source package with:
 
 cd {{cookiecutter.repo_name}}
-conda create --name {{cookiecutter.repo_name}} python=3.8
-conda activate {{cookiecutter.repo_name}}
-conda env export > environment.yml
-
-Install your new project in your local conda environment with:
-
-pip install -e .
+pipenv install -e .
 
 You will need to manually add data to .gitignore to prevent it from syncing to
-version control.
+version control (if you so choose).
 
 Don't forget to sync to GitHub. Have fun!
 """
